@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD_REST-API</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body style="background-color: rgb(187, 187, 187);">
+    <h1 style="text-align: center;">CRUD APPLICATION</h1><br> <br>
+
+ 
+    <h1 class="h">Add User</h1>
+   
+    <form action="/addUser" method="POST" class="mi" >
+      <b> USER ID:</b> <input type="text" id="userid" name="userid" size="20"><br> 
+      <b>  NAME:</b> <input type="text" id="username" name="username" size="20"><br> 
+        <b>DOB: </b><input type="text" id="dob" name="dob" size="20"><br> 
+        <b>PROFESSION:</b> <input type="text" id="profession" name="profession" size="20"><br> 
+        <button type="submit" name="submit" style="color: rgb(0, 0, 0);"><b>Add User</b></button>
+    </form>
+ 
+    <h1 class="h">Get Specific User  Details</h1>
+    <form action="/particularUser" method="POST">
+       <b> USER ID: </b><input type="text" id="urid" name="urid" size="20"><br>
+        <button type="submit" name="submit"><b>Get User</b></button>
+    </form>
+
+    <h1 class="h">Delete User  Details</h1>
+    <form action="/deleteUser" method="POST">
+       <b> USER ID: </b><input type="text" id="uid" name="uid" size="20"><br>
+        <button type="submit" name="submit"><b>Delete User</b></button>
+    </form>
+
+    <h1 class="h">Show All User  Details</h1>
+    <form action="/showAll" method="get">
+        <button type="submit" name="submit"><b>Show All</b></button>
+    </form>
+
+ 
+
+ <style>
+    body{
+       align-items: center;
+    }
+   .h{
+       margin-left:15px;
+       margin-right: 1370px;
+       background-color: gray;
+       text-align: center;
+       align-items: center;
+       border-style: dashed;
+       
+    }
+    form input{
+       display: flex;
+      font-size: large;
+      font-weight: bold;
+    }
+    button{
+      border-style: dashed;
+     
+      margin-left: 55px;
+    }
+  
+  
+   
+   
+    </style>
+   
+</body>
+</html>
